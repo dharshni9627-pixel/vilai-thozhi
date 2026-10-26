@@ -1,0 +1,4 @@
+Flask>=3.0
+python-dotenv>=1.0
+# Optional: only used when ANTHROPIC_API_KEY is set (vision + language features)
+anthropic>=0.40

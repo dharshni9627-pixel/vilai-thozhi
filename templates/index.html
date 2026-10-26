@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="pill">✨ Tamil-first · AI assisted</span>
+      <h1 data-i18n="hero_title"></h1>
+      <p data-i18n="hero_sub"></p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="{{ url_for('calculator') }}" data-i18n="cta_start"></a>
+        <a class="btn btn-ghost" href="{{ url_for('calculator') }}#demo" data-i18n="cta_demo"></a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="{{ url_for('static', filename='img/hero.svg') }}" alt="Women self-help group members with homemade products">
+    </div>
+  </div>
+</section>
+
+<section class="container features">
+  <article class="feature f-pink"><div class="f-icon">🧮</div><h3 data-i18n="f1_t"></h3><p data-i18n="f1_d"></p></article>
+  <article class="feature f-saffron"><div class="f-icon">💰</div><h3 data-i18n="f2_t"></h3><p data-i18n="f2_d"></p></article>
+  <article class="feature f-teal"><div class="f-icon">📸</div><h3 data-i18n="f3_t"></h3><p data-i18n="f3_d"></p></article>
+  <article class="feature f-indigo"><div class="f-icon">🌐</div><h3 data-i18n="f4_t"></h3><p data-i18n="f4_d"></p></article>
+</section>
+
+<section class="how">
+  <div class="container">
+    <h2 class="section-title" data-i18n="how_title"></h2>
+    <div class="steps">
+      <div class="step"><span class="num">1</span><h4 data-i18n="s1_t"></h4><p data-i18n="s1_d"></p></div>
+      <div class="step"><span class="num">2</span><h4 data-i18n="s2_t"></h4><p data-i18n="s2_d"></p></div>
+      <div class="step"><span class="num">3</span><h4 data-i18n="s3_t"></h4><p data-i18n="s3_d"></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="band">
+    <h2 data-i18n="band_title"></h2>
+    <a class="btn btn-light" href="{{ url_for('calculator') }}" data-i18n="band_btn"></a>
+  </div>
+</section>
+{% endblock %}

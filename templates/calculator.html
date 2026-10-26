@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %}விலை கணக்கீடு · VilaiThozhi{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="container">
+    <h1 data-i18n="calc_title"></h1>
+    <p data-i18n="calc_sub"></p>
+  </div>
+</section>
+
+<div class="container">
+  <form id="calc-form" class="card form-card" autocomplete="off">
+    <div class="form-grid">
+      <div class="field span-2">
+        <label for="name" data-i18n="lbl_name"></label>
+        <input id="name" type="text" maxlength="120" data-i18n-ph="ph_name" required>
+      </div>
+      <div class="field">
+        <label for="category" data-i18n="lbl_cat"></label>
+        <select id="category">
+          <option value="pickle" data-i18n="cat_pickle"></option>
+          <option value="food" data-i18n="cat_food"></option>
+          <option value="handicraft" data-i18n="cat_handicraft"></option>
+          <option value="textile" data-i18n="cat_textile"></option>
+          <option value="beauty" data-i18n="cat_beauty"></option>
+          <option value="other" data-i18n="cat_other"></option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="units" data-i18n="lbl_units"></label>
+        <input id="units" type="number" min="1" step="1" value="10" inputmode="numeric" required>
+        <small class="hint" data-i18n="hint_units"></small>
+      </div>
+    </div>
+
+    <h3 class="sec-title"><span class="dot d1"></span><span data-i18n="sec_ing"></span></h3>
+    <div class="ing-head"><span data-i18n="lbl_item"></span><span data-i18n="lbl_cost"></span><span></span></div>
+    <div id="ing-rows"></div>
+    <button type="button" id="btn-add" class="btn btn-soft" data-i18n="btn_add"></button>
+
+    <div class="form-grid three">
+      <div class="field">
+        <label for="packaging"><span class="dot d2"></span><span data-i18n="lbl_pack"></span></label>
+        <input id="packaging" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0">
+      </div>
+      <div class="field">
+        <label for="labour"><span class="dot d3"></span><span data-i18n="lbl_labour"></span></label>
+        <input id="labour" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0">
+        <small class="hint" data-i18n="hint_labour"></small>
+      </div>
+      <div class="field">
+        <label for="other"><span class="dot d4"></span><span data-i18n="lbl_other"></span></label>
+        <input id="other" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0">
+        <small class="hint" data-i18n="hint_other"></small>
+      </div>
+    </div>
+
+    <div class="form-grid">
+      <div class="field">
+        <label for="margin" data-i18n="lbl_margin"></label>
+        <input id="margin" type="number" min="5" max="300" step="1" value="30" inputmode="numeric">
+      </div>
+      <div class="field">
+        <label for="photo" data-i18n="lbl_photo"></label>
+        <input id="photo" type="file" accept="image/jpeg,image/png,image/webp">
+        <small class="hint" data-i18n="photo_hint"></small>
+      </div>
+      <div class="field span-2">
+        <label for="notes" data-i18n="lbl_notes"></label>
+        <textarea id="notes" rows="3" maxlength="1500" data-i18n-ph="ph_notes"></textarea>
+      </div>
+    </div>
+
+    <div class="form-foot">
+      <div class="live"><span data-i18n="live_total"></span>: <b id="live-total">₹0</b></div>
+      <div class="actions">
+        <button type="button" id="btn-demo" class="btn btn-ghost-dark" data-i18n="btn_demo"></button>
+        <button type="submit" id="btn-generate" class="btn btn-primary" data-i18n="btn_generate"></button>
+      </div>
+    </div>
+  </form>
+
+  <div id="results" class="results" hidden></div>
+</div>
+{% endblock %}
