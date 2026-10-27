@@ -16,7 +16,7 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", "dev-only")
 app.config["MAX_CONTENT_LENGTH"] = 6 * 1024 * 1024  # 6 MB uploads
 
 os.makedirs(app.instance_path, exist_ok=True)
-DB_PATH = os.path.join(app.instance_path, "shg.db")
+DB_PATH = os.getenv("SHG_DB_PATH") or os.path.join(app.instance_path, "shg.db")
 UPLOAD_DIR = os.path.join(app.static_folder, "uploads")
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 ALLOWED = {"image/jpeg": "jpg", "image/png": "png", "image/webp": "webp"}
