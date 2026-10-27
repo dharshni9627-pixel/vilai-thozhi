@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" role="img" aria-label="Women selling homemade products">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD166"/><stop offset="1" stop-color="#FF7A59"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE08A"/><stop offset="1" stop-color="#F4A100"/></linearGradient>
+  </defs>
+  <circle cx="265" cy="215" r="195" fill="url(#sun)"/>
+  <circle cx="85" cy="85" r="44" fill="#00A896" opacity=".9"/>
+  <circle cx="460" cy="372" r="36" fill="#3D2C8D" opacity=".9"/>
+  <circle cx="40" cy="300" r="16" fill="#E91E63"/>
+
+  <!-- leaves -->
+  <path d="M60 400c-4-40 18-62 52-66-2 38-20 60-52 66z" fill="#00A896"/>
+  <path d="M470 220c20-18 44-16 58 0-18 18-42 18-58 0z" fill="#00897B"/>
+
+  <!-- woman left -->
+  <path d="M118 340C122 244 148 214 182 210c34 4 58 34 62 130z" fill="#C2185B"/>
+  <path d="M150 238l62 100" stroke="#FFD166" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="182" cy="176" r="27" fill="#A0673A"/>
+  <path d="M154 176c0-34 56-34 56 0-12-16-44-16-56 0z" fill="#2B1B17"/>
+  <circle cx="182" cy="170" r="3.2" fill="#E53935"/>
+  <circle cx="206" cy="160" r="7" fill="#FFF3C4"/><circle cx="214" cy="168" r="6" fill="#FFF3C4"/>
+
+  <!-- woman right -->
+  <path d="M296 340c4-96 30-126 64-130 34 4 58 34 62 130z" fill="#00A896"/>
+  <path d="M328 238l62 100" stroke="#FFD166" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="360" cy="176" r="27" fill="#8D5A33"/>
+  <path d="M332 176c0-34 56-34 56 0-12-16-44-16-56 0z" fill="#2B1B17"/>
+  <circle cx="360" cy="170" r="3.2" fill="#E53935"/>
+  <circle cx="384" cy="160" r="7" fill="#FFF3C4"/><circle cx="392" cy="168" r="6" fill="#FFF3C4"/>
+
+  <!-- table -->
+  <rect x="70" y="326" width="390" height="24" rx="12" fill="#5B2A86"/>
+  <rect x="104" y="350" width="14" height="62" rx="4" fill="#5B2A86"/>
+  <rect x="412" y="350" width="14" height="62" rx="4" fill="#5B2A86"/>
+
+  <!-- jars -->
+  <g>
+    <rect x="212" y="272" width="46" height="56" rx="9" fill="#fff"/>
+    <rect x="208" y="262" width="54" height="13" rx="5" fill="#C2185B"/>
+    <rect x="219" y="286" width="32" height="26" rx="5" fill="#FF9F1C"/>
+    <rect x="268" y="282" width="40" height="46" rx="8" fill="#fff"/>
+    <rect x="264" y="273" width="48" height="12" rx="5" fill="#3D2C8D"/>
+    <rect x="275" y="294" width="26" height="20" rx="4" fill="#00A896"/>
+    <rect x="318" y="290" width="34" height="38" rx="7" fill="#fff"/>
+    <rect x="314" y="282" width="42" height="11" rx="5" fill="#E91E63"/>
+  </g>
+  <!-- basket -->
+  <path d="M96 326c4-30 56-30 60 0z" fill="#D9822B"/>
+  <path d="M104 306c8-14 44-14 52 0" fill="none" stroke="#B85F12" stroke-width="4"/>
+
+  <!-- coins -->
+  <g>
+    <ellipse cx="406" cy="322" rx="26" ry="8" fill="url(#gold)"/>
+    <ellipse cx="406" cy="312" rx="26" ry="8" fill="url(#gold)"/>
+    <ellipse cx="406" cy="302" rx="26" ry="8" fill="url(#gold)"/>
+    <ellipse cx="406" cy="292" rx="26" ry="8" fill="#FFE08A"/>
+  </g>
+
+  <!-- rupee badge -->
+  <circle cx="430" cy="105" r="42" fill="#fff"/>
+  <circle cx="430" cy="105" r="42" fill="none" stroke="#E91E63" stroke-width="5" stroke-dasharray="8 6"/>
+  <text x="430" y="121" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#C2185B" text-anchor="middle">₹</text>
+</svg>
